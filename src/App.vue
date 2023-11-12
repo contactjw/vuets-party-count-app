@@ -1,17 +1,7 @@
 <script setup lang="ts">
 import { ref, computed } from 'vue';
 import Card from './components/Cards.vue';
-
-enum GENDER {
-  MALE,
-  FEMALE,
-}
-
-interface Invitee {
-  id: number;
-  name: string;
-  gender: GENDER;
-}
+import { GENDER, type Invitee } from './types';
 
 const name = ref('');
 const gender = ref(GENDER.MALE);
@@ -98,3 +88,4 @@ select {
   margin-bottom: 2px;
 }
 </style>
+./types

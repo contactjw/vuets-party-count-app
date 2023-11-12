@@ -1,17 +1,9 @@
 <script setup lang="ts">
 import { defineProps } from 'vue';
-
-enum GENDER {
-  MALE,
-  FEMALE,
-}
+import { GENDER, type Invitee } from '../types';
 
 defineProps<{
-  invitee: {
-    id: number;
-    name: string;
-    gender: GENDER;
-  };
+  invitee: Invitee;
 }>();
 </script>
 
